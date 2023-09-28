@@ -3,14 +3,20 @@ import Data from '../app/components/data';
 import ArticleCard from '../app/components/ArticleCard';
 
 export default function Home() {
-  const projectName = "Exersice Two"
-  console.log(Data); //remember to DELETE THIS!!!!!!!
+  const projectName = "Article (Exercise Two)"
   return (
-    <main>
+    <main className={styles.page}>
         <h1>{projectName}</h1>
-        <ArticleCard title='Cool Title' description='A cool description'/>
-        <ArticleCard title='Another Title'/>
-        <ArticleCard/>
+        {Data.map ((article) => (
+          <ArticleCard 
+          key={article.id}
+          title={article.title}
+          date= {new Date(article.publishedDate).toDateString()}
+          description={article.blurb}
+          id= {article.id}
+          imageSrc={article.image.url}
+          imgAlt={article.image.alt}/>
+        ))}
     </main>
   )
 }
