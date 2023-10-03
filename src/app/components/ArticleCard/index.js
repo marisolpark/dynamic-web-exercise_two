@@ -1,6 +1,7 @@
 
 "use client";
 import Link from "next/link"
+import "../../globals.css"
 
 import styles from "./articleCard.module.css"
 
