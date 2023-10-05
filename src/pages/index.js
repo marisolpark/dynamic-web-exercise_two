@@ -6,14 +6,14 @@ export default function Home() {
   const projectName = "Article (Exercise Two)"
   return (
     <main className={styles.page}>
-        <h1>{projectName}</h1>
+        <h1 className={styles.mainTitle}>{projectName}</h1>
         {Data.map ((article) => (
           <ArticleCard 
           key={article.id}
           title={article.title}
-          date= {new Date(article.publishedDate).toDateString()}
+          date={new Date(article.publishedDate).toDateString()}
           description={article.blurb}
-          id= {article.id}
+          id={article.id}
           imageSrc={article.image.url}
           imgAlt={article.image.alt}/>
         ))}

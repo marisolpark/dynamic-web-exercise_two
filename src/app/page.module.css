@@ -1,33 +1,40 @@
-.page {
-  padding: 0 80px;
-  background-color: #FFF8EE;
-  min-height: 100vh;
+.articleBlurb {
+  font-size: 15px;
 }
 
 .articleDate {
-  font-size: 12px;
-}
-
-.articleBlurb {
-  font-size: 14px;
-}
-
-.articleTxt {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-}
-
-.articleWrapper {
-  padding: 2% 5%;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0 auto;
-  max-width: 640px
-  
+  font-weight: lighter;
+  font-size: 13px;
+  font-style: italic;
 }
 
 .articleHeader {
-  background-color: lightblue;
-  padding: 40 20 20 20;
-  background-size: cover;
   background-blend-mode: lighten;
+  background-color: lightblue;
+  background-size: cover;
+  padding: 40px 20px 20px 20px;
+}
+
+.articleTxt {
+  font-size: 15px;
+  line-height: 200%;
+}
+
+.articleWrapper {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 2% 5%;
+}
+
+.mainTitle {
+  font-size: 40px;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.page {
+  background-color: #FCF6DB;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  min-height: 100vh;
+  padding: 50px 150px;
 }

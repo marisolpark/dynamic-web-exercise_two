@@ -16,7 +16,6 @@ export default function Article() {
                     <h1>{articleData.title}</h1>
                     <p className={styles.articleDate}>{new Date(articleData.publishedDate).toDateString()}</p>
                     <p className={styles.articleBlurb}>{articleData.blurb}</p>
-
                 </div>
             </div>
             <div>

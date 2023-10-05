@@ -11,11 +11,11 @@ const ArticleCard = ({description, title, link, date, id, imageSrc, imgAlt}) => 
             <div className={styles.articleCardImg}>
                 <img src={imageSrc} alt={imgAlt}/>
             </div>
-                <div className={styles.articleCardCont}>
+            <div className={styles.articleCardCont}>
                 <h2 className={styles.articleTitle}>{title}</h2>
                 <h4 className={styles.articleDate}>{date}</h4>
                 <p className={styles.articleDes}>{description}</p>
-                <p><Link href={`article/${id}`}>Read More</Link></p>
+                <p><Link href={`article/${id}`} className={styles.articleLink}>Read More</Link></p>
             </div>
             
         </div>

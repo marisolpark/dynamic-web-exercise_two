@@ -1,25 +1,27 @@
 .articleCard {
+    background-color: #FCF6DB;
     border: 2px solid rgb(77, 31, 0);
     border-radius: 10px;
-    padding: 0% 1%;
     display: flex;
     flex-direction: row;
     margin: 2%;
-    background-color: #FCF6DB;
+    padding: 2% 3%;
 }
 
 .articleCardCont {
-    flex-shrink: 0;
+    color: rgb(77, 31, 0);
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+    line-height: 200%;
 }
 
 .articleCardImg {
-    max-width: 200px;
+    align-content: flex-start;
     display: flex;
     justify-content: center;
+    max-width: 250px;
     padding: 15px 40px 15px 15px;
-    align-content: flex-start;
 }
 
 .articleCardImg img {
@@ -27,21 +29,36 @@
     width: 100%;
 }
 
-.articleTitle {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
-    font-size: 25px;
-}
-
 .articleDate {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
-    font-size: 12px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: lighter;
+    font-size: 13px;
+    font-style: italic;
 }
 
 .articleDes {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
-    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
 }
+
+.articleLink {
+    color: rgb(77, 31, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.articleLink:hover {
+    color: green;
+    text-decoration:line-through;
+}
+
+.articleTitle {
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+}
+
+
 
 
 
